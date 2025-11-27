@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --main-color:#301985;
+    --box-shadow: 0 3px 5px 0 rgba(0,0,0,0.34);
+    --hover-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+body{
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.container{
+    width: 28%;
+    margin: 90px auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+form label{
+    margin: 5px;
+}
+
+form input[type="text"], input[type = "password"]{
+    height: 18px;
+    margin: 5px;
+    border: 0.5px solid #c7c4d4;
+    border-radius: 3px;
+    padding: 0 4px;
+}
+
+form a{
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+form input[type="submit"]{
+    height: 35px;
+    background: #44186b;
+    color: white ;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 2px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.header{
+    text-align: center;
+}
+
+.footer h3{
+    font-size: 16px;
+}
+
+.footer .images{
+    display: flex;
+    height: 10vh;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.footer .images img{
+    width: 15%;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 0 12px;
+    transition: 0.3s ease;
+}
+
+.footer .images img:hover{
+    box-shadow: var(--hover-shadow);
+    cursor: pointer;
+}
+
+.footer a{
+    float: right;
+    margin-top: 13px;
+    font-size: 15px;
+}
